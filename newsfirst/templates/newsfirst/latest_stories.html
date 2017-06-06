@@ -1,0 +1,10 @@
+
+{% load humanize %}
+{% load tz %}
+
+{% for item in news_items %}
+<a class="headline headline-list-anchor list-group-item row" href= 'apfirst/{{ item.hash2 }}' data-hash2={{ item.hash2 }}>
+    <div class="headline-item-time  col-md-2">{{ item.created_on |date:'D, g:i a'  }} </div><div class="col-md-10">{{ item.header }}</div>
+</a>
+{% endfor %}
+

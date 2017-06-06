@@ -1,0 +1,10 @@
+{% load i18n %}
+Activate your MRB Display Mode account:
+
+http://www.qbeats.us{% url 'registration_activate' activation_key %}
+
+A qbeats sales representative will be in contact with you to further discuss the service.
+
+For more information: Contact a qbeats sales representative by email mrbsales@qbeats.com or call 866-703-6379.
+
+Link is valid for {{ expiration_days }} days.

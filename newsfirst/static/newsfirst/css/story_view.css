@@ -1,0 +1,19 @@
+
+.story_container{
+    padding: 40px 40px;
+    max-width: 700px;
+
+}
+
+
+.story_container h1{
+     font-size: 1.5em;
+     margin-bottom: 1.0em;
+
+}
+
+p {
+ font-size: 0.9em;
+ line-height: 1.5em;
+ color: #333;
+		}

@@ -1,0 +1,24 @@
+.headline-item-time{
+    color: #f54b32;
+
+}
+
+
+h3{
+    color: #f54b32;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.col-md-10{
+    color: #428bca;;
+     font-size: 1.2em;
+}
+
+.col-md-2{
+    color: #666;
+     font-size: 1.1em;
+}
+.list-group{
+    max-width: 1000px;
+}

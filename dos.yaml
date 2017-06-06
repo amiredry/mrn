@@ -1,0 +1,3 @@
+blacklist:
+- subnet: 38.94.128.134
+  description: a single IP address

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Machine Readable Beats is a state of the art streaming news service for the automatic consumption of global trusted news sources built specifically for the trading community.The ultra low latency feed provides real-time and historical news content in an industry standard message format. A patent pending dynamic pricing engine computes the value of each article in real-time. Trading algorithms can take advantage of this cutting edge technology to zero-in on alpha generating opportunities and identify potential risk.">
+    <meta name="author" content="Amir Edry">
+    <title>qbeats MRB: Business & Financial Machine Readable News </title>
+    {% load staticfiles %}
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="{% static "qbeats_home/css/qb_home_base.css" %}">
+  </head>
+
+<body>
+<div class="navbar navbar-fixed-top head-qb">
+
+<div id="site-header">
+
+{% block site-header %}
+
+<a id ="logo" class="brand" href="{% url 'homepage' %}"></a>
+
+     {% endblock site-header %}
+</div>
+<div id="l">
+    <a class="link3" href="{% url 'news_first' %}">News First</a>
+    <a class="link3" href="{% url 'auth_login' %}">Sign into MRB Display Mode</a>
+    <a class="link2" href="{% url 'news_first' %}">News First</a>
+    <a class="link2" href="{% url 'auth_login' %}">Sign in</a>
+
+</div>
+</div>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron jumbotron-qb">
+      <div class="container">
+        <h1 class="mrb-description">Machine Readable Beats</h1>
+        <p>Machine Readable Beats is a state of the art streaming news service for the automatic consumption of global trusted news sources built specifically for the trading community.The ultra low latency feed provides real-time and historical news content in an industry standard message format. A patent pending dynamic pricing engine computes the value of each article in real-time. Trading algorithms can take advantage of this cutting edge technology to zero-in on alpha generating opportunities and identify potential risk.</p>
+        <p id="jum"><a class="link" href="{% url 'contact_us' %}" role="button">Contact Us</a></p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Single Normalized Format</h2>
+          <p>A single API allowing multiple sources of content to be delivered as a single connection.</p>
+        </div>
+        <div class="col-md-4">
+          <h2>Sentiment Data</h2>
+          <p>Proprietary metadata and analytic signals that may assist customers’ automated trading.</p>
+       </div>
+        <div class="col-md-4">
+          <h2>Low Latency</h2>
+          <p>All infrastructure and software has been optimized for near-zero latency by taking advantage of co-location and direct connections.</p>
+        </div>
+          <div class="col-md-4">
+          <h2>Premium Content</h2>
+          <p>Global trusted news means access to in-depth breaking events and economic data.</p>
+        </div>
+        <div class="col-md-4">
+          <h2>Historical Repository</h2>
+          <p>Archive access for backtesting to a selection of news sources.</p>
+        </div>
+        <div class="col-md-4">
+          <h2>Display Mode</h2>
+          <p>Visual access to a selection of news sources.</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; qbeats. inc 2014</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

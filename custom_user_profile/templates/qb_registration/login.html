@@ -1,0 +1,31 @@
+{% extends "qb_registration/base.html" %}
+{% load i18n %}
+
+{% block style-sheet %}
+ {{ block.super }}
+ {% load staticfiles %}
+
+ <link rel="stylesheet" type="text/css" href="{% static "custom_user_profile/css/register.css" %}">
+ {% endblock style-sheet %}
+
+{% block content %}
+<div id="main">
+<div id="signin_container">
+<h1>Sign into MRB Display Mode</h1>
+<form method="post" action=".">{% csrf_token %}
+{{ form.non_field_errors }}
+    {% for field in form %}
+    <div class="fieldWrapper">
+        {{ field.label_tag }} {{ field }}
+        {{ field.errors }}
+    </div>
+    {% endfor %}
+
+  <input id="login_signin_button" type="submit" value="{% trans 'SIGN IN' %}" />
+  <input type="hidden" name="next" value="{{ next }}" />
+</form>
+
+<p>{% trans "Forgot password" %}? <a href="{% url 'auth_password_reset' %}">{% trans "Reset it" %}</a>!</p>
+<p>{% trans "Not a member" %}? <a href="{% url 'auth_register' %}">{% trans "Register" %}</a>!</p>
+</div></div>
+{% endblock %}

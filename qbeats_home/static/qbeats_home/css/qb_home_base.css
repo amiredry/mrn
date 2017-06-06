@@ -1,0 +1,168 @@
+body{
+   background-color: #fbfdff;
+}
+
+
+.head-qb{
+    padding-top: 10px;
+    height: 80px;
+    background-color:  #fbfdff;
+    border-bottom: 1px solid  #fbfdff;
+
+}
+
+.col-md-4 p{
+  font-size: 1.2em;
+  color:rgba(0,0,0,0.7);
+}
+
+.col-md-4 h2{
+  color:rgba(0,0,0,0.7);
+}
+
+
+
+.jumbotron-qb {
+  padding: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #fbfdff;
+  margin-top: 80px;
+}
+
+#jum{
+    margin-top: 40px;
+
+}
+
+.link{
+    box-shadow: rgba(0,0,0,0.2) 0 2px 6px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+	padding: 9px 18px;
+	font-size: 1.1em;
+	background-color: #ef4e22;
+    color:white;
+	cursor: pointer;
+    -webkit-border-radius: 3px;
+    text-decoration: none;
+}
+
+.link:hover{
+
+    color:white;
+    text-decoration: none;
+
+}
+
+.link3{
+    box-shadow: rgba(0,0,0,0.2) 0 2px 6px;
+    border: 1px solid #ef4e22;
+	padding: 9px 18px;
+	font-size: 1.1em;
+    color:#ef4e22;
+	cursor: pointer;
+    -webkit-border-radius: 3px;
+    text-decoration: none;
+     margin-top: 10px;
+}
+
+.link3:hover{
+
+    color:#ef4e22;
+    text-decoration: none;
+
+}
+
+h1.mrb-description{
+    color: #ef4e22;
+    font-family: "HelveticaNeueLight", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+.jumbotron-qb p{
+    color:rgba(0, 0, 0, 0.7);
+    font-weight: 500;
+}
+
+#l{
+    margin-top: 15px;
+    margin-right: 20px;
+    float: right;
+}
+#logo {
+
+    position: absolute;
+	margin-left: 20px;
+	background-image: url(../img/qbeats_logo.png);
+	width: 130px;
+	height: 62px;
+	opacity: 0.9;
+    background-repeat: no-repeat;
+    float: right;
+
+}
+ .link2{
+    display: none;
+}
+hr{
+    border-top: 1px solid #ef4e22;
+}
+
+.btn-qb{
+    box-shadow: rgba(0,0,0,0.2) 0 2px 6px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+	font-size: 1.1em;
+	background-color: #ef4e22;
+    color:white;
+	cursor: pointer;
+    -webkit-border-radius: 3px;
+
+}
+
+@media (max-width: 768px) {
+
+   .link3{
+    display: none;
+}
+
+    .link2,.link2:hover{
+    display: inline;
+    box-shadow: rgba(0,0,0,0.2) 0 2px 6px;
+    border: 1px solid #ef4e22;
+	padding: 9px 12px;
+	font-size: 1.0em;
+    color:#ef4e22;
+	cursor: pointer;
+    -webkit-border-radius: 3px;
+    text-decoration: none;
+     margin-top: 10px;
+
+
+    }
+
+
+
+
+}
+
+@media (max-width: 768px) {
+
+   .link3{
+    display: none;
+}
+
+    .link2,.link2:hover{
+    display: inline;
+    box-shadow: rgba(0,0,0,0.2) 0 2px 6px;
+    border: 1px solid #ef4e22;
+	padding: 9px 12px;
+	font-size: 1.0em;
+    color:#ef4e22;
+	cursor: pointer;
+    -webkit-border-radius: 3px;
+    text-decoration: none;
+     margin-top: 10px;
+
+
+    }
+}

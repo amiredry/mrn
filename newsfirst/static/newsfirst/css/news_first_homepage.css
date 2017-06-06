@@ -1,0 +1,79 @@
+
+ul{
+    list-style-type: none;
+}
+
+ul a{
+   text-decoration: none;
+}
+
+#headline-header {
+   color: #f54b32;
+   margin-top: 20px;
+   margin-bottom: 10px;
+   font-style: italic;
+   font-weight: bold;
+   font-size: 1.3em;
+}
+
+.headline{
+    color:#333;
+    line-height: 32px;
+    font-size: 1.1em;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.headline-item-time{
+    font-size: 0.8em;
+    color: #666;
+    margin-right: 15px;
+}
+
+#headline-grid {
+    width: 720px;
+	box-shadow: rgba(0,0,0,0.2) 0 2px 6px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: white;
+	padding: 9px 18px;
+	position: relative;
+    margin: 20px auto;
+
+}
+
+#overlay{
+    display: none;
+}
+/* override default jquery  UI Dialog widget  style */
+.ui-widget-overlay {
+    background: none;
+	background-color: black;
+    opacity: .9;
+}
+.ui-dialog {
+    border-radius: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #fff !important;
+    padding:0;
+    box-shadow: rgba(0,0,0,0.2) 0 2px 6px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+
+.ui-dialog .ui-dialog-content {
+	position: relative;
+	border: 0;
+    padding-left: 20px;
+    background-color: #fff !important;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+    border:none !important;
+    background: none #ffffff !important;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+    border:none !important;
+    background: none !important;
+}

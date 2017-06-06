@@ -1,0 +1,27 @@
+{% extends "qb_registration/base.html" %}
+{% load i18n %}
+
+{% block style-sheet %}
+ {{ block.super }}
+ {% load staticfiles %}
+ <link rel="stylesheet" type="text/css" href="{% static "custom_user_profile/css/register.css" %}">
+ {% endblock style-sheet %}
+{% block title %}{% trans "Your profile" %}{% endblock %}
+
+{% block content %}
+    <div id="profile-view">
+    <h1>{% trans "Profile information" %}</h1>
+    <a href="{% url 'auth_password_change' %}">{% trans "Change password" %}</a>
+
+    <p class="le">User name - <span class="re">{{ user }}</span> </p>
+    <p class="le">E-mail address - <span class="re">{{ user.email }}</span> </p>
+    <p class="le">First name - <span class="re">{{ user.first_name }}</span> </p>
+    <p class="le">Last name - <span class="re">{{ user.last_name }} </span></p>
+    <p class="le">Phone - <span class="re">{{ user.userprofile.phone }}</span> </p>
+    <p class="le">Company - <span class="re">{{ user.userprofile.company }}</span> </p>
+    <p class="le">Job title - <span class="re">{{ user.userprofile.job_title }}</span> </p>
+    <p class="le">Country - <span class="re">{{ user.userprofile.country }} </span></p>
+    <p class="le">Zipcode - <span class="re">{{ user.userprofile.zipcode }}</span> </p>
+
+    </div>
+{% endblock %}

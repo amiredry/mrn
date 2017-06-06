@@ -1,0 +1,50 @@
+
+html, body{
+    background-color: #f7f7f7;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+#site-header {
+    background-color: rgba(223, 223, 223, 0.3);
+	height: 80px;
+	float: none;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+
+}
+
+#logo {
+
+    position: absolute;
+	margin-top: 10px;
+	margin-left: 20px;
+	background-image: url(../img/qbeats_logo.png);
+	width: 130px;
+	height: 62px;
+	opacity: 0.9;
+    background-repeat: no-repeat;
+}
+
+.qbSignin-SignedIn{
+
+	margin-top: 30px;
+	margin-right: 20px;
+	width: 330px;
+	height: 40px;
+	opacity: 0.9;
+    float:right;
+
+}
+#username_link{
+   text-decoration: none;
+   color: #2e6e9e;
+
+}
+
+
+a{
+   color: #36b;
+}
+a:visited{
+    color: #36b;
+}

@@ -1,0 +1,115 @@
+
+body{
+    background-color: #fbfdff;
+    padding-top: 10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+.link{
+    box-shadow: rgba(0,0,0,0.2) 0 2px 6px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+	padding: 9px 18px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+	font-size: 1.0em;
+	background-color: #ef4e22;
+    color:white;
+	cursor: pointer;
+    -webkit-border-radius: 3px;
+    width:120px;
+    text-decoration: none;
+}
+#l{
+    margin-top: 15px;
+    margin-right: 10px;
+    float: right;
+}
+#logo {
+
+    position: absolute;
+	margin-left: 20px;
+	background-image: url(../img/qbeats_logo.png);
+	width: 130px;
+	height: 62px;
+	opacity: 0.9;
+    background-repeat: no-repeat;
+    float: right;
+}
+
+#mrb-main{
+    width: 1060px;
+    margin: 140px auto;
+}
+
+#mrb-description{
+    max-width:600px;
+    min-width: 400px;
+    color:rgba(0,0,0,0.8);
+    float: left;
+    margin-left: 10px;
+
+}
+
+#mrb-description h1{
+    color: #ef4e22;
+    font-family: "HelveticaNeueLight", Helvetica, Arial, sans-serif;
+    font-size: 2.4em;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+#mrb-description h2{
+    color:rgba(0,0,0,0.7);
+    font-weight: 300;
+    font-size: 1.6em;
+    margin-top: 15px;
+}
+
+#mrb-description h4{
+    color:rgba(0,0,0,0.7);
+    font-family: "HelveticaNeueLight", Helvetica, Arial, sans-serif;
+    font-size: 1.4em;
+    font-weight: 300;
+}
+
+ul{
+padding-left:20px;
+}
+
+#mrb-description p{
+    color:rgba(0,0,0,0.8);
+    line-height: 28px;
+}
+
+li p{
+	margin-top:-15px;
+	color:rgba(0,0,0,0.7);
+}
+
+.mrb-contact{
+	margin-top:20px;
+	font-size:1.1em;
+}
+
+.mrb-contact a{
+   text-decoration: none;
+   color: #2e6e9e;
+
+}
+
+#more-info{
+   color:rgba(0,0,0,0.8);
+}
+
+
+#contact {
+    width:300px;
+	float: right;
+    box-shadow: rgba(0,0,0,0.2) 0 2px 6px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 20px 25px;
+    background-color: white;
+    margin-top:70px ;
+    margin-right: 10px;
+}

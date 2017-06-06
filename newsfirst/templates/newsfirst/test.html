@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    {% load staticfiles %}
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script  type="text/javascript" src="{% static "newsfirst/js/manager.js" %}"></script>
+    <script  type="text/javascript" src="{% static "newsfirst/js/worker.js" %}"></script>
+</head>
+<body>
+<h1>COOL</h1>
+<form action="" method="POST">{% csrf_token %}
+  <script
+    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key="pk_test_iMwjBVoBO0wlWFuxigRcjJMM"
+    data-amount="2000"
+    data-name="qbeats News First"
+    data-description="1 widgets ($40.00)"
+    data-image="/128x128.png">
+  </script>
+</form>
+
+</body>
+</html>

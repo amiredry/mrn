@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>qbeats MRB</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static "qbeats_home/css/base.css" %}">
+</head>
+<body>
+<div id="site-header">
+
+{% block site-header %}
+
+<a id ="logo" href="{% url 'homepage' %}"></a>
+
+     {% endblock site-header %}
+</div>
+<div id="l">
+<a class="link" href="{% url 'news_first' %}">NEWS FIRST</a>
+<a class="link" href="{% url 'auth_login' %}">Sign into MRB Display Mode</a>
+</div>
+<div id="mrb-main">
+<div id="mrb-description">
+<h1> Machine Readable Beats</h1>
+<p>Machine Readable Beats is a state of the art streaming news service for the automatic consumption of global trusted news sources built specifically for the trading community.The ultra low latency feed provides real-time and historical news content in an industry standard message format. A patent pending dynamic pricing engine computes the value of each article in real-time. Trading algorithms can take advantage of this cutting edge technology to zero-in on alpha generating opportunities and identify potential risk.</p>
+
+<div id="mrb-features">
+<h2>Features</h2>
+<ul>
+<li><h4>Single Normalized Format</h4> <p>A single API allowing multiple sources of content to be delivered as a single connection.</p></li>
+<li><h4>Sentiment Data</h4><p>Proprietary metadata and analytic signals that may assist customers’ automated trading.</p></li>
+<li><h4>Low Latency</h4><p>All infrastructure and software has been optimized for near-zero latency by taking advantage of co-location and direct connections.</p></li>
+<li><h4>Premium Content</h4><p>Global trusted news means access to in-depth breaking events and economic data.</p></li>
+<li><h4>Historical Repository</h4><p> Archive access for backtesting to a selection of news sources.</p></li>
+<li><h4>Display Mode</h4><p> Visual access to a selection of news sources. <span><a href="{% url 'auth_login' %}">Sign into MRB Display Mode</a></span></p></li>
+
+
+</ul>
+</div>
+
+</div>
+<div id="contact">
+<h2 id="more-info">Contact qbeats Sales</h2>
+<p class="mrb-contact">EMAIL US &nbsp;<a class="resume" href="mailto:mrbsales@qbeats.com?subject=mrb-sales">mrbsales@qbeats.com</a></p>
+<p class="mrb-contact"> CALL US &nbsp;&nbsp;&nbsp;866-703-6379.</p>
+</div>
+</div>
+</body>
+</html>

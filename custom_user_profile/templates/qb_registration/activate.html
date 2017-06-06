@@ -1,0 +1,26 @@
+{% extends "qb_registration/base.html" %}
+{% load i18n %}
+
+{% block style-sheet %}
+ {{ block.super }}
+ {% load staticfiles %}
+ <link rel="stylesheet" type="text/css" href="{% static "custom_user_profile/css/register.css" %}">
+ {% endblock style-sheet %}
+
+
+
+{% block content %}
+
+{% if account %}
+
+<p>{% trans "Account successfully activated" %}</p>
+
+<p><a href="{% url 'auth_login' %}">{% trans "Log in" %}</a></p>
+
+{% else %}
+
+<p>{% trans "Account activation failed" %}</p>
+
+{% endif %}
+
+{% endblock %}

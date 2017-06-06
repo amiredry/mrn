@@ -1,0 +1,120 @@
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #fbfdff;
+  font-family: "HelveticaNeueLight", Helvetica, Arial, sans-serif;
+}
+
+.form-signin {
+  max-width: 430px;
+  padding: 15px;
+  margin: 50px auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+ margin-bottom: 20px;
+ color: rgba(0,0,0,0.7);
+ font-family: "HelveticaNeueLight", Helvetica, Arial, sans-serif;
+ font-weight: 300;
+
+}
+.form-signin .checkbox {
+  font-weight: normal;
+
+}
+
+label.checkbox {
+
+    padding-left:0;
+}
+.form-signin .form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.link{
+    box-shadow: rgba(0,0,0,0.2) 0 2px 6px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+	padding: 9px 18px;
+	font-size: 1.1em;
+    color:white;
+	cursor: pointer;
+    -webkit-border-radius: 3px;
+    text-decoration: none;
+    background-color: #ef4e22;
+}
+
+.link3, .link3:hover{
+    box-shadow: rgba(0,0,0,0.2) 0 2px 6px;
+    border: 1px solid #ef4e22;
+	padding: 9px 18px;
+	font-size: 1.1em;
+	background-color: #ffffff;
+    color:#ef4e22;
+	cursor: pointer;
+    -webkit-border-radius: 3px;
+    text-decoration: none;
+}
+.form-control:focus {
+  border-color: rgba(239, 78, 34, .7);
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(239, 78, 34, .6);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(239, 78, 34, .6);
+}
+
+#logo {
+
+    position: absolute;
+	margin-left: 20px;
+	background-image: url(../img/qbeats_logo.png);
+	width: 130px;
+	height: 62px;
+	opacity: 0.9;
+    background-repeat: no-repeat;
+    float: right;
+
+}
+
+
+.head-qb{
+    padding-top: 10px;
+    height: 80px;
+    background-color:  #fbfdff;
+    border-bottom: 1px solid  #fbfdff;
+
+}
+#l{
+    margin-top: 15px;
+    margin-right: 20px;
+    float: right;
+}
+
+@media (max-width: 768px) {
+
+.form-signin .form-signin-heading{
+ margin-bottom: 20px;
+ color: rgba(0,0,0,0.7);
+ font-family: "HelveticaNeueLight", Helvetica, Arial, sans-serif;
+ font-weight: 300;
+  font-size: 1.2em;
+
+}
+}

@@ -1,0 +1,54 @@
+{% extends "qb_registration/base.html" %}
+{% load i18n %}
+
+ {% block style-sheet %}
+ {{ block.super }}
+ {% load staticfiles %}
+ <link rel="stylesheet" type="text/css" href="{% static "custom_user_profile/css/register.css" %}">
+ {% endblock style-sheet %}
+{% block title %}qbeats. Sign Up{% endblock %}
+
+{% block content %}
+
+<div id="main" >
+
+<div id="leftPane">
+    <h1> MRB Display Mode account registration</h1>
+<form id="registrarion-form" action="." method="post">{% csrf_token %}
+
+{{ form.non_field_errors }}
+{% for field in form1 %}
+    <div class="fieldWrapper">
+        {{ field.label_tag }} {{ field }}
+        {{ field.errors }}
+    </div>
+    {% endfor %}
+{% for field in form2 %}
+    <div class="fieldWrapper">
+        {{ field.label_tag }} {{ field }}
+        {{ field.errors }}
+    </div>
+    {% endfor %}
+
+ <input class="signin" type="submit" value= "CREATE ACCOUNT" />
+</form>
+</div>
+
+<div id="rightPane">
+<p>Already have a Display Mode account?<p>
+<form  method="get" action="{% url 'auth_login' %}">
+    <span> <input class="signin" type="submit" value="SIGN IN"/> </span>
+</form>
+
+<h1>Pricing: $34.99/month after initial 7-day Trial</h1>
+<div id="contact">
+<p>For more information:</p>
+<p>Call - 866-703-6379</p>
+<p>Email - <a href="mailto:mrbsales@qbeats.com?subject=mrb-sales">mrbsales@qbeats.com</a></p>
+</div>
+</div>
+
+
+</div>
+
+{% endblock %}

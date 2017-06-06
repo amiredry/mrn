@@ -1,0 +1,18 @@
+{% extends "newsfirst/news_first_base.html" %}
+
+{% block style-sheet %}
+{% load staticfiles %}
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="{% static "newsfirst/css/news_first_reset.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "newsfirst/css/news_first_base.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "newsfirst/css/news_first_homepage.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "newsfirst/css/story_view.css" %}">
+
+{% endblock style-sheet %}
+
+{% block content %}
+   <div class="story_container" >
+   <h1>{{ item.header|safe}}<span> {{ item.created_on |date:'D, g:i a'  }} </span></h1>
+   {{ item.content.text.cont|safe}}
+    </div>
+{% endblock %}
